@@ -19,7 +19,10 @@
 <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
 <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
 <script>
-    CKEDITOR.replace('content');
+    CKEDITOR.replace('textarea1');
+</script>
+<script>
+    CKEDITOR.replace('textarea2');
 </script>
 </body>
 </html>

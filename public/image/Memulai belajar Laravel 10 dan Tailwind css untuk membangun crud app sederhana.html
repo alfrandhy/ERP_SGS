@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="bziY7V8a61hfqf9Jt4VCW3M1m7FR50sGezsBtUxt">
+    <title>    Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana
+</title>
+
+    <meta name="author" content="Gun Gun Priatna">
+    <meta name="description" content="Pelajari cara membuat aplikasi web dengan mudah menggunakan tutorial Laravel 10 untuk pemula. Dapatkan panduan lengkap untuk instalasi, konfigurasi database">
+    <meta name="keywords" content="Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana, Laravel">
+    <meta name="revisit-after" content="1 days">
+    <meta name="robots" content="all,index,follow">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+    <meta http-equiv="Content-Language" content="id">
+    
+    <meta name="Distribution" content="Global">
+    <meta name="Rating" content="General">
+
+    <link rel="shortcut icon" href="https://qadrlabs.com/img/logo/favicon.ico">
+    <meta property="og:site_name" content="qadrLabs - Lab Belajar Pemrograman dan Pengembangan Software">
+    <link rel="canonical" href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app">
+    <meta property="og:locale" content="id">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana">
+    <meta property="og:description" content="Pelajari cara membuat aplikasi web dengan mudah menggunakan tutorial Laravel 10 untuk pemula. Dapatkan panduan lengkap untuk instalasi, konfigurasi database">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/gungunpriatna/tes-repositori@master/header/772915a8c2b59a815699e2855d1e9c23-Build_CRUD_App_dengan_Laravel_9_dan_Tailwind_css.png">
+    <meta property="og:url" content="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Pelajari cara membuat aplikasi web dengan mudah menggunakan tutorial Laravel 10 untuk pemula. Dapatkan panduan lengkap untuk instalasi, konfigurasi database">
+    <meta name="twitter:title" content="Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana">
+    <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/gungunpriatna/tes-repositori@master/header/772915a8c2b59a815699e2855d1e9c23-Build_CRUD_App_dengan_Laravel_9_dan_Tailwind_css.png">
+
+    <meta name="yandex-verification" content="7ce21c9ec9545742">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin="">
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com/" crossorigin="">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin="">
+    <link rel="preconnect" href="https://code.jquery.com/" crossorigin="">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin="">
+    <link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin="">
+    <link rel="preconnect" href="https://recodeku.disqus.com/" crossorigin="">
+
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+    <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
+
+
+    <link rel="dns-prefetch" href="https://code.jquery.com/">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+    <link rel="dns-prefetch" href="https://recodeku.disqus.com/">
+
+
+    <link rel="preload" href="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/css2" as="style">
+    <link href="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/css2" rel="stylesheet">
+    <!-- core CSS -->
+
+    <link rel="preload" href="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/monokai-sublime.min.css" as="style">
+    <link rel="preload" href="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/font-awesome.min.css" as="style">
+
+    <link rel="preload" as="style" href="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/main-wqHLJzIH.css"><link rel="stylesheet" href="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/main-wqHLJzIH.css">    <link href="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/monokai-sublime.min.css" rel="stylesheet">
+    <link href="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-S1YWG9EM0Z');
+    </script><style type="text/css" id="operaUserStyle">
+  video {
+    filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(1.00 calc(env(-opera-accent-color-r, 255)/255) calc(env(-opera-accent-color-g, 255)/255) calc(env(-opera-accent-color-b, 255)/255)));
+  }
+</style>
+
+        <style>
+
+        .author-avatar{
+            display: inline-block;
+        }
+
+        .name-and-desc{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 11px;
+            text-align: left;
+        }
+
+        .author-info{
+            margin-top:43px;
+        }
+
+        .author-name{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;
+            letter-spacing: 0.3px;
+            background: -webkit-linear-gradient(#F03226, #C416D3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .author-desc{
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.5px;
+            color: #000000;
+            opacity: 0.5;
+            font-weight: 400;
+            margin-top:10px;
+        }
+
+        .boxavatars{
+            width:60px;
+        }
+        .avatardesigner{
+            border-radius:2000px;
+            width:100%;
+            display: inline-block;
+            padding:2px;
+        }
+
+        .avatardesigner img{
+            width: 100%;
+            border-radius: 2000px;
+        }
+
+        .paddingphoto{
+            /*border: 5px solid #ffffff;*/
+            border-radius: 2000px;
+            background-color: #E3E6EC;
+        }
+
+        .gradientavatars{
+            background: -webkit-linear-gradient(left top, rgb(216,15,233) 0%, rgb(	242	,36	,23) 100%);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .writer{
+            text-align: left;
+            margin:0px 0px 40px 0px;
+        }
+    </style>
+
+    <script type="application/ld+json">
+            {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app"
+    },
+    "headline": "Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://cdn.jsdelivr.net/gh/gungunpriatna/tes-repositori@master/header/772915a8c2b59a815699e2855d1e9c23-Build_CRUD_App_dengan_Laravel_9_dan_Tailwind_css.png",
+        "height": 630,
+        "width": 1120
+    },
+    "datePublished": "2023-02-20T22:13:36+00:00",
+    "dateModified": "2024-11-05T06:15:29+00:00",
+    "author": {
+        "@type": "Person",
+        "name": "Gun Gun Priatna"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "qadrLabs",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://qadrlabs.com/img/logo/favicon.png"
+        }
+    },
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://qadrlabs.com/posts/search?q={search_term}",
+        "query-input": "required name=search_term"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hi@qadrlabs.com",
+        "contactType": "Customer service"
+    },
+    "sameAs": [
+        "https://web.facebook.com/qadrlabs"
+    ]
+}
+        </script>
+    <style type="text/css">:root [href^="//mage98rquewz.com/"], :root [href^="//x4pollyxxpush.com/"], :root span[id^="ezoic-pub-ad-placeholder-"], :root ins.adsbygoogle[data-ad-slot], :root ins.adsbygoogle[data-ad-client], :root guj-ad, :root gpt-ad, :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="taboola-stream-"], :root div[id^="sticky_ad_"], :root div[id^="st"][style^="z-index: 999999999;"], :root div[id^="ezoic-pub-ad-"], :root div[id^="div-gpt-"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]):not([style="pointer-events: none; height: 1px; width: 0px; opacity: 0; visibility: hidden; position: fixed; bottom: 0px;"]), :root div[id^="dfp-ad-"], :root div[id^="crt-"][style], :root div[id^="adspot-"], :root div[id^="adrotate_widgets-"], :root ps-connatix-module, :root div[id^="ad_position_"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-id-advertdfpconf], :root div[data-dfp-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-alias="300x250 Ad 2"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-adname], :root div[data-ad-targeting], :root div[data-ad-placeholder], :root div[aria-label="Ads"], :root display-ads, :root display-ad-component, :root aside[id^="adrotate_widgets-"], :root ark-top-ad, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root amp-ad-custom, :root amp-ad, :root div[id^="google_dfp_"], :root ad-slot, :root ad-shield-ads, :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://xbet-4.com/"], :root div[id^="ad-position-"], :root a[href^="https://www.toprevenuegate.com/"], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://www.liquidfire.mobi/"], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highperformancecpmgate.com/"], :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://lnkxt.bannerator.com/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="https://www.financeads.net/tc.php?"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://maymooth-stopic.com/"], :root a[href^="https://www.dql2clk.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.dating-finder.com/signup/?ai_d="], :root a[href^="https://explore-site.com/"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root a[href^="https://www.adxsrve.com/"], :root [data-template-type="nativead"], :root a[href^="https://www.endorico.com/Smartlink/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root [data-ad-manager-id]:not([style$="left: -10000px !important; top: -1000px !important;"]):not(.adsbygoogle), :root a[href^="https://voluum.prom-xcams.com/"], :root div[data-type="_mgwidget"]:not(.eyeo), :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://torguard.net/aff.php"] > img, :root [data-identity="adhesive-ad"], :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://tatrck.com/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://t.aslnk.link/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://t.acam.link/"], :root a[href*="//daichoho.com/"], :root a[href^="https://syndication.optimizesrv.com/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root div[data-alias="300x250 Ad 1"], :root a[href^="https://syndicate.contentsserved.com/"], :root a[href^="https://svb-analytics.trackerrr.com/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://slkmis.com/"], :root bottomadblock, :root a[href^="https://s.zlinkd.com/"], :root a[href^="https://s.zlink3.com/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://s.optzsrv.com/"], :root #kt_player > div[style$="display: block;"][style*="inset: 0px;"], :root a[href^="https://quotationfirearmrevision.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://ak.oalsauwy.net/"], :root a[href^="https://softwa.cfd/"], :root a[href^="https://play1ad.shop/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://www.dating-finder.com/?ai_d="], :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root app-ad, :root [href^="https://ap.octopuspop.com/click/"] > img, :root a[href^="https://postback1win.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"] > img, :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://porntubemate.com/"], :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://pb-track.com/"], :root a[href^="https://pb-front.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://streamate.com/landing/click/"], :root div[class^="Adstyled__AdWrapper-"], :root a[href^="https://startgaming.net/tienda/" i], :root a[href^="https://osfultrbriolenai.info/"], :root a[href^="https://upsups.click/"], :root a[href^="https://ndt5.net/"], :root a[href^="http://eighteenderived.com/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root a[href^="https://m.do.co/c/"] > img, :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="https://kiksajex.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://snowdayonline.xyz/"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://jaxofuna.com/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root a[href^="https://hot-growngames.life/"], :root a[href^="https://helmethomicidal.com/"], :root a[href^="https://go.xxxvjmp.com/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root [data-role="tile-ads-module"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://go.xlviiirdr.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://go.xlirdr.com"], :root [data-css-class="dfp-inarticle"], :root a[href^="https://l.hyenadata.com/"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://zirdough.net/"], :root a[href^="https://s.deltraff.com/"], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://lijavaxa.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.dmzjmp.com"], :root a[href^="https://www.bang.com/?aff="], :root #mgb-container > #mgb, :root a[href^="https://go.admjmp.com"], :root a[href^="https://ak.stikroltiltoowi.net/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://financeads.net/tc.php?"], :root a[href^="https://www.adskeeper.com"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://clicks.affstrack.com/"] > img, :root a[href^="https://ak.hauchiwu.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://drumskilxoa.click/"], :root a[href^="https://dl-protect.net/"], :root a[href^="https://rixofa.com/"], :root #ads[style^="position: absolute; z-index: 30; width: 100%; height"], :root a[href^="https://disobediencecalculatormaiden.com/"], :root a[href*=".foxqck.com/"], :root a[href^="https://ctosrd.com/"], :root [href^="https://noqreport.com/"] > img, :root a[href^="https://clicks.pipaffiliates.com/"], :root app-advertisement, :root a[href^="https://getmatchedlocally.com/"], :root a[href^="https://clickins.slixa.com/"], :root a[href^="https://datewhisper.life/"], :root a[href^="https://get-link.xyz/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root a[href^="https://combodef.com/"], :root a[href^="https://click.hoolig.app/"], :root a[href^="https://track.totalav.com/"], :root a[href^="https://ctrdwm.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], :root a[href^="https://s.ma3ion.com/"], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://t.ajrkm1.com/"], :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="https://bngpt.com/"], :root a[href^="https://black77854.com/"], :root a[href^="https://banners.livepartners.com/"], :root a[href^="http://revolvemockerycopper.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://aweptjmp.com/"], :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://ausoafab.net/"], :root a[href^="https://ak.psaltauw.net/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="https://bc.game/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://ads.planetwin365affiliate.com/"], :root a[href^="https://ads.leovegas.com/"], :root a[href^="https://auesk.cfd/"], :root a[href^="https://a2.adform.net/"], :root a[href^="https://a.candyai.love/"], :root a[href^="https://playnano.online/offerwalls/?ref="], :root a[href^="https://a.adtng.com/"], :root .banner-img > .pbl, :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root div[id^="rc-widget-"], :root a[href^="http://eslp34af.click/"], :root a[href^="https://turnstileunavailablesite.com/"], :root a[href^="https://chaturbate.com/in/?"], :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href*="&maxads="], :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://eergortu.net/"], :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root [data-advadstrackid]:not([style$="left: -10000px !important; top: -1000px !important;"]):not(.adsbygoogle), :root div[id^="optidigital-adslot"], :root a[href^="https://123-stream.org/"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="https://allhost.shop/aff.php?"], :root [data-dynamic-ads], :root a[href^="http://vnte9urn.click/"], :root a[href^="https://getvideoz.click/"], :root a[href^="http://troopsassistedstupidity.com/"], :root a[href^="http://trk.globwo.online/"], :root a[href^="https://random-affiliate.atimaze.com/"], :root a-ad, :root a[href^="https://offhandpump.com/"], :root a[href^="http://stickingrepute.com/"], :root #slashboxes > .deals-rail, :root a[href^="http://premonitioninventdisagree.com/"], :root a[href^="http://naggingirresponsible.com/"], :root a[href^="https://in.rabbtrk.com/"], :root a[href^="http://www.h4trck.com/"], :root a[href^="https://81ac.xyz/"], :root a[href^="http://guestblackmail.com/"], :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://sexynearme.com/"], :root a[href^="https://myclick-2.com/"], :root a[href^="http://dragnag.com/"], :root a[href^="http://dragfault.com/"], :root .ob_container .item-container-obpd, :root a[href^="https://www8.smartadserver.com/"], :root a[href^="https://pb-imc.com/"], :root a[href^="http://deskfrontfreely.com/"], :root a[href^="http://muzzlematrix.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="http://avthelkp.net/"], :root a[href^="https://a.medfoodhome.com/"], :root a[href^="https://engine.flixtrial.com/"], :root [data-type="ad-vertical"], :root [data-taboola-options], :root a[href^="http://annulmentequitycereals.com/"], :root a[href^="//startgaming.net/tienda/" i], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="https://s.cant3am.com/"], :root a[href^="//s.st1net.com/splash.php"], :root a[href^="https://join.virtualtaboo.com/track/"], :root [id^="ad_sky"], :root a[href^="http://coefficienttolerategravel.com/"], :root a[href^="https://a.medfoodsafety.com/"], :root a[href^="//go.eabids.com/"], :root a[href^="//ejitsirdosha.net/"], :root a[href^=" https://www.friendlyduck.com/AF_"], :root a[href*="/jump/next.php?r="], :root [href^="https://ilovemyfreedoms.com/landing-"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root a[href^="https://lone-pack.com/"], :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root a[href^="https://t.ajrkm3.com/"], :root [href^="https://aads.com/campaigns/"], :root a[href^="//stighoazon.com/"], :root [href^="https://www.profitablegatecpm.com/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root a[href*=".cfm?domain="][href*="&fp="], :root [data-ad-name], :root a[href^="https://loboclick.com/"], :root a[data-url^="https://vulpix.bet/?ref="], :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root [onclick*="content.ad/"], :root [name^="google_ads_iframe"], :root [id^="section-ad-banner"], :root a[href^="https://go.xlivrdr.com"], :root [onclick^="location.href='https://1337x.vpnonly.site/"], :root a[href^="https://golinks.work/"], :root div[id^="gpt_ad_"], :root [id^="div-gpt-ad"]:not([style^="width: 1px; height: 1px; position: absolute; left: -10000px; top: -"]):not([style="pointer-events: none; height: 1px; width: 0px; opacity: 0; visibility: hidden; position: fixed; bottom: 0px;"]), :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href*="//jjgirls.com/sex/Chaturbate"], :root [id^="ad-wrap-"], :root [href^="https://zone.gotrackier.com/"], :root a[href^="http://sarcasmadvisor.com/"], :root [href^="https://www.restoro.com/"], :root [href^="https://www.targetingpartner.com/"], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://www.hostg.xyz/"] > img, :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root citrus-ad-wrapper, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://go.grinsbest.com/"], :root a[href^="https://vo2.qrlsx.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root [href^="https://wct.link/click?"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join.girlsoutwest.com/"], :root a[href^="https://activate-game.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root [data-wpas-zoneid], :root a[href^="https://track.aftrk3.com/"], :root [href^="https://join3.bannedsextapes.com"], :root a[href^="https://bodelen.com/"], :root a[href*=".g2afse.com/"], :root [href^="https://join.playboyplus.com/track/"], :root div[id^="adngin-"], :root [data-rc-widget], :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [href^="https://glersakr.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root [href^="https://cpa.10kfreesilver.com/"], :root a[data-href^="http://ads.trafficjunky.net/"], :root a[href^="http://partners.etoro.com/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root [href^="https://ad1.adfarm1.adition.com/"], :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://go.bushheel.com/"], :root a[href^="https://ctjdwm.com/"], :root a[href^="https://camfapr.com/landing/click/"], :root div[data-ad-wrapper], :root .gnt_em_vp_c[data-g-s="vp_dk"], :root [href="//sexcams.plus/"], :root [href^="http://www.mypillow.com/"] > img, :root [href^="https://awbbjmp.com/"], :root a[href^="https://tracker.loropartners.com/"], :root #kt_player > a[target="_blank"], :root a[href^="http://bongacams.com/track?"], :root [href^="http://mypillow.com/"] > img, :root [href="https://ourgoldguy.com/contact/"] img, :root #teaser3[style="width: 100%;text-align: center;display: scroll;position:fixed;bottom: 0;margin: 0 auto;z-index: 103;"], :root [href="https://www.masstortfinancing.com/"] > img, :root a[href^="https://go.rmhfrtnd.com/"], :root [href="https://jdrucker.com/gold"] > img, :root [data-block-type="ad"], :root [data-ad-width]:not([style$="left: -10000px !important; top: -1000px !important;"]):not(.adsbygoogle), :root [href^="https://go.xlrdr.com"], :root [data-testid^="taboola-"], :root a[href^="https://track.1234sd123.com/"], :root zeus-ad, :root [data-testid="prism-ad-wrapper"], :root [href^="https://ad.admitad.com/"], :root [href^="https://mypillow.com/"] > img, :root [data-testid="ad_testID"], :root [href^="https://antiagingbed.com/discount/"] > img, :root a[href*=".adsrv.eacdn.com/"], :root [href^="https://optimizedelite.com/"] > img, :root [data-name="adaptiveConstructorAd"], :root a[href^="https://go.cmtaffiliates.com/"], :root [data-testid="adBanner-wrapper"], :root [href^="https://mylead.global/stl/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root a[href^="https://go.hpyjmp.com"], :root [href^="https://mystore.com/"] > img, :root div[class*="publift-widget-"]:has(.fuse-slot-sticky), :root a[href^="https://witnessjacket.com/"], :root [data-mobile-ad-id], :root [class^="amp-ad-"], :root a[href^="http://handgripvegetationhols.com/"], :root a[href^="https://bs.serving-sys.com"], :root a[href^="https://go.bbrdbr.com"], :root a[href^="https://fc.lc/ref/"], :root [data-adshim], :root topadblock, :root a[href^="//s.zlinkd.com/"], :root [data-id^="div-gpt-ad"], :root #teaser1[style^="width:autopx;"], :root [href^="https://www.cloudways.com/en/?id"], :root [data-asg-ins], :root [data-desktop-ad-id], :root a[href^="https://gamingadlt.com/?offer="], :root .grid > .container > #aside-promotion, :root DFP-AD, :root [id^="ad_slider"], :root [data-adbridg-ad-class], :root a[href^="https://baipahanoop.net/"], :root [href^="https://v.investologic.co.uk/"], :root div[id^="ad-div-"], :root [data-ad-module]:not([style$="left: -10000px !important; top: -1000px !important;"]):not(.adsbygoogle), :root AMP-AD, :root [data-ad-cls], :root [data-ez-name], :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="https://go.mnaspm.com/"], :root a[href^="https://service.bv-aff-trx.com/"], :root a[href^="https://6-partner.com/"], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root div[id*="ScriptRoot"]:not(.eyeo), :root a[href^="https://clixtrac.com/"], :root atf-ad-slot, :root [data-adblockkey]:not([style$="left: -10000px !important; top: -1000px !important;"]):not(html):not(.adsbygoogle), :root a[href^="https://traffdaq.com/"], :root [data-testid="commercial-label-taboola"], :root [class^="div-gpt-ad"], :root a[href^="http://tc.tradetracker.net/"] > img, :root [href^="https://affiliate.fastcomet.com/"] > img, :root [class^="adDisplay-module"], :root [data-freestar-ad][id], :root AD-SLOT, :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root #teaser2[style^="width:autopx;"], :root a[href^="https://ngineet.cfd/"], :root [data-revive-zoneid], :root a[href^="https://losingoldfry.com/"], :root a[href^="https://gml-grp.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root #teaser3[style^="width:autopx;"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="http://li.blogtrottr.com/click?"], :root a[href^="https://t.ajump1.com/"], :root a[href^="https://go.xxxjmp.com"], :root #leader-companion > a[href], :root #target.pk-page-ready #pk-status-message { display: none !important; }</style></head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top py-4 solid shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://qadrlabs.com/">
+                <img src="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/logo.png" class="me-5" width="120" alt="qadrLabs">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="column-gap: 50px;row-gap: 8px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://qadrlabs.com/posts">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://qadrlabs.com/series">Series</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutorial
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right animate  fade-up">
+                            <a class="dropdown-item" href="https://qadrlabs.com/posts/category/oop">PHP OOP</a>
+                            <a class="dropdown-item" href="https://qadrlabs.com/posts/category/codeigniter">CodeIgniter
+                                3</a>
+                            <a class="dropdown-item" href="https://qadrlabs.com/posts/category/codeigniter-4">CodeIgniter
+                                4</a>
+                            <a class="dropdown-item" href="https://qadrlabs.com/posts/category/laravel">Laravel</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://qadrlabs.com/notes">Short Notes</a>
+                    </li>
+                </ul>
+
+                <!-- Button trigger modal -->
+                <button type="button" style="background: #e5e9f2; color: #34364a; font-size: 16px; padding: 12px; border-radius: 100px; border: 0; font-weight: 600; transition: all .4s; line-height: 24px; width: -moz-fit-content!important; width: fit-content!important; height: -moz-fit-content!important; height: fit-content!important;" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="16" width="16" style="margin-right: 8px;"><!-- Adjust size and spacing -->
+                        <path fill="#000000" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path>
+                    </svg>
+                </button>
+
+                                    <a href="https://qadrlabs.com/login" style="background: #e5e9f2; color: #34364a; font-size: 16px; padding: 12px 24px; border-radius: 100px; border: 0; font-weight: 600; transition: all .4s; line-height: 24px; width: -moz-fit-content!important; width: fit-content!important; height: -moz-fit-content!important; height: fit-content!important; margin-left: 8px;text-decoration: none">
+                        Login
+                    </a>
+
+                    <a href="https://qadrlabs.com/register" style="background: #0d6efd; color: #fff!important; font-size: 16px; padding: 12px 24px; border-radius: 100px; border: 0; font-weight: 600; transition: all .4s; line-height: 24px; width: -moz-fit-content!important; width: fit-content!important; height: -moz-fit-content!important; height: fit-content!important; margin-left: 8px;text-decoration: none">
+                        Register
+                    </a>
+                
+
+
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <div style="height: 56px;background:#ebf0ff"></div>
+    <style>
+
+
+    </style>
+    <!-- BANNER -->
+    <div class="jumbotron banner">
+        <div class="container banner-content text-center my-4 p-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+
+                    <blockquote class="blockquote">
+                        <h1 class="page-title">Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana</h1>
+
+                        <div class="banner-meta"><a href="https://qadrlabs.com/author/@gungunpriatna">Gun Gun Priatna</a>
+                            <div class="bullet"></div> <a href="https://qadrlabs.com/posts/category/laravel">Laravel</a>
+                            <div class="bullet"></div> <a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#">20 Februari 2023</a>
+                        </div>
+                    </blockquote>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: BANNER -->
+
+    <section class="news">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                                            <div class="image-news" style="position: relative;">
+                            <img src="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/772915a8c2b59a815699e2855d1e9c23-Build_CRUD_App_dengan_Laravel_9_dan_Tailwind_css.png" data-src="https://cdn.jsdelivr.net/gh/gungunpriatna/tes-repositori@master/header/772915a8c2b59a815699e2855d1e9c23-Build_CRUD_App_dengan_Laravel_9_dan_Tailwind_css.png" class="img-fluid lazyloaded" alt="Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana">
+
+                                                    </div>
+
+                    
+
+
+                    <div class="card border-0 content">
+                        <div class="card-body pl-0 pr-0">
+
+
+                            
+                                                            <p>Dalam perjalanan pengembangan web yang telah berlangsung selama bertahun-tahun, setiap developer pasti menghadapi momen krusial untuk memilih teknologi yang tepat. Sebagai seorang developer yang telah mengeksplorasi berbagai framework, perjalanan saya dengan Laravel dimulai pada September 2021 dengan Laravel 8.</p>
+<p>Dunia teknologi bergerak dengan sangat dinamis. Dalam kurun waktu singkat, Laravel telah merilis dua versi major - Laravel 9 di Februari 2022 dan yang terbaru Laravel 10 di tahun 2023. Situasi ini menimbulkan dilema yang sering dihadapi developer pemula: haruskah kita tetap mendalami versi yang sudah familiar, atau beralih ke versi terbaru?</p>
+<p>Beberapa pertanyaan kritis yang muncul:</p>
+<ul>
+<li>Bagaimana perbedaan fundamental antara Laravel 8 dan Laravel 10?</li>
+<li>Apakah ada perubahan signifikan dalam sintaks dan struktur kode?</li>
+<li>Seberapa besar learning curve yang harus dihadapi?</li>
+</ul>
+<p>Untuk menjawab keraguan tersebut, saya memutuskan untuk melakukan eksperimen langsung dengan Laravel 10. Project yang dipilih adalah pengembangan aplikasi CRUD (Create, Read, Update, Delete) - fondasi dari setiap aplikasi web modern. Untuk memberikan nilai tambah, project ini juga mengintegrasikan Tailwind CSS sebagai framework UI, berbeda dengan <a href="https://qadrlabs.com/post/belajar-laravel-8-membuat-aplikasi-crud-sederhana">tutorial Laravel 8 sebelumnya</a>.</p>
+<h2 id="persiapan">Persiapan Environment Development</h2>
+<p>Sebelum memulai perjalanan dengan Laravel 10, pastikan environment development Anda memenuhi persyaratan teknis. Laravel 10 membutuhkan PHP versi 8.1 atau yang lebih tinggi. Mari kita verifikasi versi PHP yang terinstal:</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">php -v</code></pre>
+<p>Pada environment development kita, terinstal PHP 8.1.6:</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">PHP 8.1.6 (cli) (built: May 12 2022 23:30:39) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.6, Copyright (c) Zend Technologies
+    with Xdebug v3.1.4, Copyright (c) 2002-2022, by Derick Rethans
+    with Zend OPcache v8.1.6, Copyright (c), by Zend Technologies</code></pre>
+<h3>Checklist Requirement Laravel 10:</h3>
+<p>✓ PHP &gt;= 8.1
+✓ Extension Packages:</p>
+<ul>
+<li>Ctype PHP Extension</li>
+<li>cURL PHP Extension</li>
+<li>DOM PHP Extension</li>
+<li>Fileinfo PHP Extension</li>
+<li>Filter PHP Extension</li>
+<li>Hash PHP Extension</li>
+<li>Mbstring PHP Extension</li>
+<li>OpenSSL PHP Extension</li>
+<li>PCRE PHP Extension</li>
+<li>PDO PHP Extension</li>
+<li>Session PHP Extension</li>
+<li>Tokenizer PHP Extension</li>
+<li>XML PHP Extension</li>
+</ul>
+<p>Pro Tip: Gunakan fungsi <code>phpinfo()</code> untuk verifikasi komprehensif ekstensi yang terinstal.</p>
+<p>Dengan environment yang sudah siap, kita dapat memulai petualangan membangun aplikasi CRUD modern menggunakan Laravel 10 dan Tailwind CSS. Tertarik untuk ikut dalam perjalanan ini? Mari kita mulai langkah pertama bersama!</p>
+<h2 id="overview">Overview</h2>
+<p>Pada tutorial laravel kali ini kita akan membuat project sederhana seperti pada tutorial crud Laravel versi sebelumnya yaitu project blog. Kita akan coba beberapa hal yaitu:</p>
+<ul>
+<li>Menggunakan Tailwind Css sebagai Framework UI.</li>
+<li>Menggunakan opsi untuk generate method dan route model binding pada saat membuat controller menggunakan <code>php artisan</code></li>
+<li>Menggunakan Route Model Binding (disebut dua kali supaya lebih jelas)</li>
+</ul>
+<h2 id="step-1">Step 1 - Setup Project</h2>
+<p>Langkah pertama adalah install Laravel 10 untuk project crud kita. Buka terminal lalu run <code>composer</code> untuk menginstall Laravel 10.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">composer create-project laravel/laravel:^10.0 blog</code></pre>
+<p>Setelah Laravel 10 sudah terinstall, masuk ke direktori project.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs"><span class="hljs-built_in">cd</span> blog</code></pre>
+<p>Setelah itu kita bisa cuma run project kita menggunakan <code>artisan</code> command.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">php artisan serve</code></pre>
+<p>Kemudian buka url <code>http://127.0.0.1:8000/</code> di browser. Setelah project kita buka di browser, kita bisa lihat halaman default framework laravel dan kita juga bisa lihat keterangan versi laravel dan versi PHP yang kita pakai di posisi kanan bawah, misalnya <code>Laravel v10.0.3 (PHP v8.1.6)</code>.</p>
+<h2 id="step-2">Step 2 - Set Konfigurasi Database</h2>
+<p>Setelah Laravel 10 berhasil kita install dan coba kita run di langkah sebelumnya, sekarang kita akan atur konfigurasi database. Buka file <code>.env</code>, lalu sesuaikan dengan credentials mysql dan nama database.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="hljs ini"><span class="hljs-attr">DB_CONNECTION</span>=mysql
+<span class="hljs-attr">DB_HOST</span>=<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>
+<span class="hljs-attr">DB_PORT</span>=<span class="hljs-number">3306</span>
+<span class="hljs-attr">DB_DATABASE</span>=db_blog
+<span class="hljs-attr">DB_USERNAME</span>=admin
+<span class="hljs-attr">DB_PASSWORD</span>=password</code></pre>
+<p>Sebagai contoh, nama database untuk project kita adalah <code>db_blog</code>, sedangkan untuk credentials mysql, usernamenya <code>admin</code> dan passwordnya <code>password</code>.</p>
+<p>Setelah selesai save kembali file <code>.env</code>.</p>
+<p>Selanjutnya kita buat database baru dengan nama <code>db_blog</code> (atau nama database apapun yang kamu setting di file <code>.env</code>). Kita bisa buat database baru melalui <code>phpmyadmin</code> atau command sql. Buka terminal lalu kita login ke mysql. </p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">mysql -u admin -p</code></pre>
+<p>Setelah kita masukan passwordnya, akan tampil output seperti di bawah ini.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">$ mysql -u admin -p
+
+Enter password:&nbsp;
+
+Welcome to the MySQL monitor.&nbsp; Commands end with ; or \g.
+
+Your MySQL connection id is 85
+
+Server version: 5.7.37 Homebrew
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+
+affiliates. Other names may be trademarks of their respective
+
+owners.
+
+Type <span class="hljs-string">'help;'</span> or <span class="hljs-string">'\h'</span> <span class="hljs-keyword">for</span> <span class="hljs-built_in">help</span>. Type <span class="hljs-string">'\c'</span> to clear the current input statement.</code></pre>
+<p>Selanjutnya kita buat database baru menggunakan command.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">CREATE DATABASE db_blog;</code></pre>
+<p>Output:</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="hljs apache"><span class="hljs-attribute">mysql</span>&gt; CREATE DATABASE db_blog;
+
+<span class="hljs-attribute">Query</span> OK, <span class="hljs-number">1</span> row affected (<span class="hljs-number">0</span>.<span class="hljs-number">00</span> sec)</code></pre>
+<p>Setelah database kita buat, selanjutnya keluar dari cli mysql.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs"><span class="hljs-built_in">exit</span>;</code></pre>
+<h2 id="step-3">Step 3 - File Model dan Migration</h2>
+<p>Pada tahapan ini kita akan membuat file model sekaligus file migration menggunakan <code>artisan</code> command. Karena project kita tentang blog, kita akan buat model untuk post dengan nama <code>Post</code>. Buka kembali terminal, lalu kita run command untuk membuat model dan migration.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">php artisan make:model Post -m</code></pre>
+<p>Output:</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">
+INFO&nbsp; Model **[app/Models/Post.php]** created successfully. &nbsp;
+
+INFO&nbsp; Migration **[database/migrations/2023_02_20_130437_create_posts_table.php]** created successfully.</code></pre>
+<p>Pada output yang ditampilkan, kita bisa lihat file model dan file migration berhasil dibuat. Dengan menggunakan opsi <code>-m</code> pada <code>artisan</code> command <code>make:model</code>, kita bisa langsung buat file migration sesuai dengan model-nya.</p>
+<p>Selanjutnya kita buka file model yang baru saja dibuat. yaitu <code>app/Models/Post.php</code>, lalu kita definisikan properties <code>$fillable</code> untuk mengatur <code>mass assignment</code> atau data apa saja yang diperbolehkan ketika ada proses insert atau update.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Models</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Factories</span>\<span class="hljs-title">HasFactory</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Post</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-keyword">use</span> <span class="hljs-title">HasFactory</span>;
+
+    <span class="hljs-keyword">protected</span> <span class="hljs-variable">$fillable</span> = [
+        <span class="hljs-string">'title'</span>, <span class="hljs-string">'content'</span>, <span class="hljs-string">'slug'</span>, <span class="hljs-string">'status'</span>
+    ];
+}</code></pre>
+<p>Pada baris kode di atas, hanya <code>title</code>, <code>content</code>, <code>slug</code>, dan <code>status</code> yang bisa ditambahkan ke table <code>posts</code> pada saat proses insert ataupun update.</p>
+<p>Selanjutnya kita buat table <code>posts</code> menggunakan file migration yang sebelumnya berhasil kita generate menggunakan <code>artisan command</code>. Buka file <code>database/migrations/yyyy_mm_dd_xxxxxx_create_posts_table.php</code>, lalu kita tambahkan kolom untuk table <code>posts</code> sesuai dengan yang dengan yang sudah kita atur pada model <code>Post</code>.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Migrations</span>\<span class="hljs-title">Migration</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Schema</span>\<span class="hljs-title">Blueprint</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Facades</span>\<span class="hljs-title">Schema</span>;
+
+<span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Migration</span>
+</span>{
+    <span class="hljs-comment">/**
+     * Run the migrations.
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">up</span>(<span class="hljs-params"></span>)
+    </span>{
+        Schema::create(<span class="hljs-string">'posts'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">Blueprint <span class="hljs-variable">$table</span></span>) </span>{
+            <span class="hljs-variable">$table</span>-&gt;id();
+            <span class="hljs-variable">$table</span>-&gt;string(<span class="hljs-string">'title'</span>);
+            <span class="hljs-variable">$table</span>-&gt;text(<span class="hljs-string">'content'</span>);
+            <span class="hljs-variable">$table</span>-&gt;string(<span class="hljs-string">'slug'</span>);
+            <span class="hljs-variable">$table</span>-&gt;smallInteger(<span class="hljs-string">'status'</span>);
+            <span class="hljs-variable">$table</span>-&gt;timestamps();
+        });
+    }
+
+    <span class="hljs-comment">/**
+     * Reverse the migrations.
+     *
+     * <span class="hljs-doctag">@return</span> void
+     */</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">down</span>(<span class="hljs-params"></span>)
+    </span>{
+        Schema::dropIfExists(<span class="hljs-string">'posts'</span>);
+    }
+};</code></pre>
+<p>Setelah itu kita run migration.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">php artisan migrate</code></pre>
+<p>Output:</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="hljs apache"><span class="hljs-attribute">INFO</span>&nbsp; Preparing database. &nbsp;
+
+<span class="hljs-attribute">Creating</span> migration table ......................................... <span class="hljs-number">25</span>ms **DONE**
+
+<span class="hljs-attribute">INFO</span>&nbsp; Running migrations. &nbsp;
+
+<span class="hljs-attribute">2014_10_12_000000_create_users_table</span> ............................. <span class="hljs-number">23</span>ms **DONE**
+
+<span class="hljs-attribute">2014_10_12_100000_create_password_reset_tokens_table</span> ............. <span class="hljs-number">21</span>ms **DONE**
+
+<span class="hljs-attribute">2019_08_19_000000_create_failed_jobs_table</span> ....................... <span class="hljs-number">15</span>ms **DONE**
+
+<span class="hljs-attribute">2019_12_14_000001_create_personal_access_tokens_table</span> ............ <span class="hljs-number">24</span>ms **DONE**
+
+<span class="hljs-attribute">2023_02_20_130437_create_posts_table</span> .............................. <span class="hljs-number">9</span>ms **DONE**</code></pre>
+<p>Ya, table <code>posts</code> (dan table lainnya) berhasil dibuat setelah kita run migration.</p>
+<h2 id="step-4">Step 4 - Coding Fitur Menampilkan Data</h2>
+<p>Fitur pertama yang akan tambahkan adalah fitur untuk menampilkan data <code>post</code> pada project kita. Pertama kita buat terlebih dahulu file controller menggunakan artisan command.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">php artisan make:controller PostController --model=Post --resource</code></pre>
+<p>Output:</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="hljs css"><span class="hljs-selector-tag">INFO</span>&nbsp; <span class="hljs-selector-tag">Controller</span> **<span class="hljs-selector-attr">[app/Http/Controllers/PostController.php]</span>** <span class="hljs-selector-tag">created</span> <span class="hljs-selector-tag">successfully</span>.</code></pre>
+<p>Seperti yang sudah disebutkan pada Overview Project, kita coba gunakan opsi <code>--model</code> dan <code>resource</code> untuk generate <code>PostController</code>.</p>
+<ul>
+<li>Opsi <code>--model=Post</code> kita tambahkan karena kita akan coba menggunakan <code>route model binding</code>. Jadi nanti controller hasil generate akan memiliki method dengan type hint instance sebuah model.</li>
+<li>Opsi <code>--resource</code> kita tambahkan untuk generate controller yang menangani crud. Jadi ketika controller di-generate, controller akan memiliki method yang menangani crud.</li>
+</ul>
+<p>Supaya lebih jelas, sekarang kita buka file <code>app/Http/Controllers/PostController.php</code> dan kita bisa lihat ada beberapa method yang sudah di-generate, seperti method <code>index()</code>, <code>create()</code>,<code>store()</code>,<code>show()</code>,<code>edit()</code>, <code>update()</code>, dan <code>destroy()</code>.</p>
+<p>Baik kita lanjutkan. </p>
+<p>Sekarang kita tambahkan baris kode pada method <code>index()</code> untuk menampilkan halaman daftar post.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Controllers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Models</span>\<span class="hljs-title">Post</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Request</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span>
+</span>{
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span>(<span class="hljs-params"></span>) 
+    </span>{  
+        <span class="hljs-variable">$posts</span> = Post::orderBy(<span class="hljs-string">'id'</span>, <span class="hljs-string">'DESC'</span>)-&gt;paginate(<span class="hljs-number">10</span>);  
+        <span class="hljs-keyword">return</span> view(<span class="hljs-string">'posts.index'</span>, compact(<span class="hljs-string">'posts'</span>));  
+    }
+}</code></pre>
+<p>Method <code>index()</code> ini menangani untuk menampilkan halaman daftar post. Pada baris kode di atas, terdapat <code>$posts</code> yang berisi data post yang akan dipassing dan ditampilkan di view <code>posts.index</code>. </p>
+<p>Langkah berikutnya adalah membuat file view yang akan kita pakai untuk menampilkan data dari variable <code>$posts</code>, yaitu <code>posts/index.blade.php</code>. Kita buat dulu folder baru dengan nama <code>posts</code>, lalu di dalam folder <code>posts</code> kita buat file <code>index.blade.php</code>. Di dalam file <code>index.blade.php</code> kita tambahkan baris kode berikut ini.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-html hljs xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"csrf-token"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"{{ csrf_token() }}"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Post List - Tutorial CRUD Laravel 10 @ qadrlabs.com<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mx-auto mt-10 mb-10 px-10"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"grid grid-cols-8 gap-4 mb-4 p-5"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-span-4 mt-2"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-3xl font-bold"</span>&gt;</span>
+                DAFTAR POST
+            <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-span-4"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"flex justify-end"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ route('post.create') }}"</span>
+                   <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"</span>
+                   <span class="hljs-attr">id</span>=<span class="hljs-string">"add-post-btn"</span>&gt;</span>+ Create New Post<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-white p-5 rounded shadow-sm"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Notifikasi menggunakan flash session data --&gt;</span>
+        @if (session('success'))
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"p-3 rounded bg-green-500 text-green-100 mb-4"</span>&gt;</span>
+                {{ session('success') }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        @endif
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"min-w-full table-auto border"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-b"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-sm font-medium text-gray-900 px-6 py-4 text-left"</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-sm font-medium text-gray-900 px-6 py-4 text-center"</span>&gt;</span>Status<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-sm font-medium text-gray-900 px-6 py-4 text-center"</span>&gt;</span>Create At<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">scope</span>=<span class="hljs-string">"col"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-sm font-medium text-gray-900 px-6 py-4 text-center"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+            @forelse ($posts as $post)
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"border-b"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"</span>&gt;</span>{{ $post-&gt;title }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap text-center"</span>&gt;</span>{{ $post-&gt;status == 0 ? 'Draft':'Publish' }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap text-center"</span>&gt;</span>{{ $post-&gt;created_at-&gt;format('d-m-Y') }}<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap text-center"</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">onsubmit</span>=<span class="hljs-string">"return confirm('Apakah Anda Yakin ?');"</span>
+                              <span class="hljs-attr">action</span>=<span class="hljs-string">"{{ route('post.destroy', $post-&gt;id) }}"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"POST"</span>&gt;</span>
+
+                            @csrf
+                            @method('DELETE')
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ route('post.edit', $post-&gt;id) }}"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ $post-&gt;id }}-edit-btn"</span>
+                               <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"</span>&gt;</span>Edit<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>
+                                    <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-block px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"</span>
+                                    <span class="hljs-attr">id</span>=<span class="hljs-string">"{{ $post-&gt;id }}-delete-btn"</span>&gt;</span>Delete
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            @empty
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center text-sm text-gray-900 px-6 py-4 whitespace-nowrap"</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">"4"</span>&gt;</span>Data post tidak tersedia<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            @endforelse
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3"</span>&gt;</span>
+            {{ $posts-&gt;links() }}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.tailwindcss.com/?plugins=forms"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Pada baris kode di atas, terdapat variable <code>$posts</code> yang sebelumnya kita passing dari controller pada method <code>index()</code> menggunakan function <code>view()</code>. Selanjutnya kita looping <code>$posts</code> menggunakan blade directive, yaitu <code>@forelse</code>. Selain <code>@forelse</code>, kita bisa lihat ada blade directive <code>@if</code> untuk pengecekan notifikasi.</p>
+<p>Untuk tampilan atau user interface, kita coba memakai tailwindcss. Bisa kita lihat terdapat script untuk load tailwindcss sebelum tag <code>&lt;/body&gt;</code>.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.tailwindcss.com/?plugins=forms"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+<p>Karena belum menambahkan route, kita belum bisa run project untuk melihat halaman daftar post. Jadi sekarang kita tambahkan atau register route baru di file <code>routes/web.php</code>.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Facades</span>\<span class="hljs-title">Route</span>;
+
+<span class="hljs-comment">/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/</span>
+
+Route::get(<span class="hljs-string">'/'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> view(<span class="hljs-string">'welcome'</span>);
+});
+
+Route::resource(<span class="hljs-string">'post'</span>, \App\Http\Controllers\PostController::class); <span class="hljs-comment">// tambahkan ini</span></code></pre>
+<p>Route pada baris kode di atas, sudah menangani route untuk menampilkan data, menambahkan data, memperbaharui data dan menghapus data. Untuk mengecek route yang sudah kita register, kita bisa gunakan command.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">php artisan route:list</code></pre>
+<p>Output:</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">&nbsp; GET|HEAD&nbsp; &nbsp; &nbsp; &nbsp; / ..........................................................&nbsp;
+
+&nbsp; POST&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _ignition/execute-solution ignition.executeSolution › Spati…
+
+&nbsp; GET|HEAD&nbsp; &nbsp; &nbsp; &nbsp; _ignition/health-check ignition.healthCheck › Spatie\Larave…
+
+&nbsp; POST&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _ignition/update-config ignition.updateConfig › Spatie\Lara…
+
+&nbsp; GET|HEAD&nbsp; &nbsp; &nbsp; &nbsp; api/user ...................................................&nbsp;
+
+&nbsp; GET|HEAD&nbsp; &nbsp; &nbsp; &nbsp; post ..................... post.index › PostController@index
+
+&nbsp; POST&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; post ..................... post.store › PostController@store
+
+&nbsp; GET|HEAD&nbsp; &nbsp; &nbsp; &nbsp; post/create ............ post.create › PostController@create
+
+&nbsp; GET|HEAD&nbsp; &nbsp; &nbsp; &nbsp; post/{post} ................ post.show › PostController@show
+
+&nbsp; PUT|PATCH &nbsp; &nbsp; &nbsp; post/{post} ............ post.update › PostController@update
+
+&nbsp; DELETE&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; post/{post} .......... post.destroy › PostController@destroy
+
+&nbsp; GET|HEAD&nbsp; &nbsp; &nbsp; &nbsp; post/{post}/edit ........... post.edit › PostController@edit
+
+&nbsp; GET|HEAD&nbsp; &nbsp; &nbsp; &nbsp; sanctum/csrf-cookie sanctum.csrf-cookie › Laravel\Sanctum&nbsp; …</code></pre>
+<p>Setelah route kita register, kita bisa akses halaman daftar post dengan membuka url <code>http://127.0.0.1:8000/post</code> di browser.</p>
+<h2 id="step-5">Step 5 - Coding Fitur Menambahkan Data</h2>
+<p>Tahapan selanjutnya adalah menambahkan fitur untuk tambah data di project kita. Buka kembali file controller <code>PostController.php</code>, lalu kita tambahkan baris kode pada method <code>create()</code> untuk menampilkan form menambah data baru.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-comment">// ... baris kode sebelumnya</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span>
+</span>{
+
+    <span class="hljs-comment">// ... baris kode sebelumnya</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">create</span>(<span class="hljs-params"></span>)  
+    </span>{  
+        <span class="hljs-keyword">return</span> view(<span class="hljs-string">'posts.create'</span>);  
+    }
+}
+</code></pre>
+<p>Ya, method ini menangani untuk proses menampilkan halaman untuk menambahkan data, dengan me-return function <code>view()</code>. Selanjutnya kita buat file view baru, sesuai yang ada pada method view, yaitu file <code>create.blade.php</code> di dalam folder <code>posts</code>.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-html hljs xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"csrf-token"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"{{ csrf_token() }}"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Create New Post - Tutorial CRUD Laravel 10 @ qadrlabs.com<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mx-auto mt-10 mb-10 px-10"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"grid grid-cols-8 gap-4 p-5"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-span-4 mt-2"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-3xl font-bold"</span>&gt;</span>
+                CREATE NEW POST
+            <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-span-4"</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-white p-5 rounded shadow-sm"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"{{ route('post.store') }}"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"POST"</span>&gt;</span>
+            @csrf
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-5"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"title"</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"
+                    form-control
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding
+                    border border-solid border-gray-300
+                    rounded-full
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                  "</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"title"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{ old('title') }}"</span> <span class="hljs-attr">required</span>&gt;</span>
+
+                <span class="hljs-comment">&lt;!-- error message untuk title --&gt;</span>
+                @error('title')
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-red-400 p-2 shadow-sm rounded mt-2"</span>&gt;</span>
+                    {{ $message }}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                @enderror
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-5"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"status"</span>&gt;</span>Publish Status<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"status"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-select appearance-none
+                      block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding bg-no-repeat
+                      border border-solid border-gray-300
+                      rounded-full
+                      transition
+                      ease-in-out
+                      m-0 focus:text-gray-700 focus:bg-white
+                      focus:border-blue-600 focus:outline-none"</span> <span class="hljs-attr">required</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">selected</span>&gt;</span>Publish<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"0"</span>&gt;</span>Draft<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-5"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"content"</span>&gt;</span>Content<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span>
+                    <span class="hljs-attr">name</span>=<span class="hljs-string">"content"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"content"</span>
+                    <span class="hljs-attr">class</span>=<span class="hljs-string">"
+                        form-control
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        text-base
+                        font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                      "</span>
+                    <span class="hljs-attr">cols</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"10"</span>
+                    <span class="hljs-attr">required</span>&gt;</span>{{ old('content') }}<span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+
+                <span class="hljs-comment">&lt;!-- error message untuk content --&gt;</span>
+                @error('content')
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"invalid-feedback"</span>&gt;</span>
+                    {{ $message }}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                @enderror
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>
+                        <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"</span>&gt;</span>
+                    Save
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ route('post.index') }}"</span>
+                   <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"</span>&gt;</span>back<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.tailwindcss.com/?plugins=forms"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    CKEDITOR.replace(<span class="hljs-string">'content'</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Kalau di tutorial sebelumnya (CRUD Laravel 8), kita gunakan summernote untuk menulis konten, di tutorial ini kita coba gunakan CKEditor supaya kita tidak perlu menggunakan Jquery.</p>
+<p>Pada baris kode di atas, action pada form mengarah ke route <code>post.store</code>.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"{{ route('post.store') }}"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"POST"</span>&gt;</span></code></pre>
+<p>Route <code>post.store</code> ini mengarah ke method <code>store()</code> di dalam <code>PostController</code>. Sekarang kita buka kembali <code>PostController</code>, lalu kita tambahkan baris kode pada  method <code>store()</code> untuk menangani proses insert data.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-comment">// ... baris kode sebelumnya</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Str</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span>
+</span>{
+
+    <span class="hljs-comment">// ... baris kode sebelumnya</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">store</span>(<span class="hljs-params">Request <span class="hljs-variable">$request</span></span>)  
+    </span>{  
+        <span class="hljs-keyword">$this</span>-&gt;validate(<span class="hljs-variable">$request</span>, [  
+            <span class="hljs-string">'title'</span> =&gt; <span class="hljs-string">'required|string|max:151'</span>,  
+            <span class="hljs-string">'content'</span> =&gt; <span class="hljs-string">'required'</span>,  
+            <span class="hljs-string">'status'</span> =&gt; <span class="hljs-string">'required|integer'</span>  
+        ]);  
+
+        <span class="hljs-variable">$post</span> = Post::create([  
+            <span class="hljs-string">'title'</span> =&gt; <span class="hljs-variable">$request</span>-&gt;get(<span class="hljs-string">'title'</span>),  
+            <span class="hljs-string">'content'</span> =&gt; <span class="hljs-variable">$request</span>-&gt;get(<span class="hljs-string">'content'</span>),  
+            <span class="hljs-string">'status'</span> =&gt; <span class="hljs-variable">$request</span>-&gt;get(<span class="hljs-string">'status'</span>),  
+            <span class="hljs-string">'slug'</span> =&gt; Str::slug(<span class="hljs-variable">$request</span>-&gt;get(<span class="hljs-string">'title'</span>))  
+        ]);  
+
+        <span class="hljs-keyword">return</span> redirect()-&gt;route(<span class="hljs-string">'post.index'</span>)  
+            -&gt;with(<span class="hljs-string">'success'</span>, <span class="hljs-string">'Post created successfully.'</span>);  
+    }
+}
+</code></pre>
+<p>Algoritma untuk method <code>store()</code> ini terbagi menjadi tiga bagian, yaitu validasi, proses insert data dan proses redirect ke halaman daftar post. Pada proses validasi, kita gunakan function <code>validate()</code> dan kita definisikan aturan validasi untuk field yang akan kita insert ke dalam table <code>posts</code>, yaitu <code>title</code>, <code>content</code> dan <code>status</code>. Apabila isian form tidak sesuai dengan aturan validasi yang sudah didefinisikan, project akan menampilkan kembali halaman create post dan menampilkan pesan error. </p>
+<p>Dan apabila isian form sudah sesuai, proses akan dilanjutkan ke proses insert data. Pada proses insert data, di sini kita gunakan method eloquent <code>create()</code>. Data yang dapat kita insert ke dalam table sesuai dengan yang sudah kita definisikan di property <code>$fillable</code> pada model <code>Post</code>. Untuk <code>slug</code>, kita gunakan helper dari Laravel 10 untuk generate slug berdasarkan title. Sebelum deklarasi class <code>PostController</code>, kita import class <code>Illuminate\Support\Str</code>.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs"><span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">Str</span>;</code></pre>
+<p>Selanjutnya, kita gunakan <code>Str</code> class untuk generate slug berdasarkan title.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs">Str::slug(<span class="hljs-variable">$request</span>-&gt;get(<span class="hljs-string">'title'</span>))</code></pre>
+<p>Setelah proses insert, web akan ter-redirect route <code>post.index</code> atau halaman daftar post dan menampilkan flashdata <code>success</code>.</p>
+<h2 id="step-6">Step 6 - Coding Fitur Memperbaharui Data</h2>
+<p>Tahapan selanjutnya adalah coding fitur untuk memperbaharui data. Pada file <code>index.blade.php</code>, proses untuk memperbaharui data mengarah ke route <code>post.edit</code> dan route ini mengarah ke method <code>edit()</code> pada controller <code>PostController</code>. Sekarang kita coba tambahkan baris kode pada method <code>edit()</code>. Buka kembali file controller <code>PostController</code>, lalu kita tambahkan baris kode pada method <code>edit()</code> untuk menangani proses menampilkan halaman edit data post.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-comment">// ... baris kode sebelumnya</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span>
+</span>{
+    <span class="hljs-comment">// ... baris kode sebelumnya</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">edit</span>(<span class="hljs-params">Post <span class="hljs-variable">$post</span></span>)
+    </span>{
+        <span class="hljs-keyword">return</span> view(<span class="hljs-string">'posts.edit'</span>, compact(<span class="hljs-string">'post'</span>));
+    }
+}
+</code></pre>
+<p>Bisa kita lihat parameter untuk method <code>edit()</code> agak berbeda dari biasanya. Kalau di tutorial sebelumnya, kita gunakan <code>$id</code>, di sini kita coba gunakan model <code>Post</code> sebagai parameternya atau biasa disebut <code>Route Model Binding</code>. Dengan menggunakan route model binding, secara otomatis model instance akan diinject langsung ke dalam route sesuai dengan id pada request URI. Selanjutnya model instance ini ditampung di dalam <code>$post</code>, lalu kemudian dipassing ke view menggunakan <code>compact('post')</code>. Pada halaman view, isi dari <code>$post</code> akan ditampilkan pada masing-masing form input.</p>
+<p>Selanjutnya kita buat file view sesuai dengan yang sudah kita definisikan pada function <code>view()</code> yang ada pada method <code>edit()</code>, yaitu file <code>edit.blade.php</code>. Kita buat file <code>edit.blade.php</code> di dalam direktori <code>posts</code>, lalu kita tambahkan baris kode berikut ini.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-html hljs xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"csrf-token"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"{{ csrf_token() }}"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Edit Post - Tutorial CRUD Laravel 10 @ qadrlabs.com<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container mx-auto mt-10 mb-10 px-10"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"grid grid-cols-8 gap-4 p-5"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-span-4 mt-2"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-3xl font-bold"</span>&gt;</span>
+                EDIT POST
+            <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-span-4"</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-white p-5 rounded shadow-sm"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"{{ route('post.update', $post-&gt;id) }}"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"POST"</span>&gt;</span>
+            @csrf
+            @method('PUT')
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-5"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"title"</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"
+                    form-control
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding
+                    border border-solid border-gray-300
+                    rounded-full
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                  "</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"title"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{ old('title', $post-&gt;title) }}"</span> <span class="hljs-attr">required</span>&gt;</span>
+
+                <span class="hljs-comment">&lt;!-- error message untuk title --&gt;</span>
+                @error('title')
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-red-400 p-2 shadow-sm rounded mt-2"</span>&gt;</span>
+                    {{ $message }}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                @enderror
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-5"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"status"</span>&gt;</span>Publish Status<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"status"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-select appearance-none
+                      block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding bg-no-repeat
+                      border border-solid border-gray-300
+                      rounded-full
+                      transition
+                      ease-in-out
+                      m-0 focus:text-gray-700 focus:bg-white
+                      focus:border-blue-600 focus:outline-none"</span> <span class="hljs-attr">required</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> {{ <span class="hljs-attr">old</span>('<span class="hljs-attr">status</span>', $<span class="hljs-attr">post-</span>&gt;</span>status) == 1 ? 'selected':'' }} &gt;Publish<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"0"</span> {{ <span class="hljs-attr">old</span>('<span class="hljs-attr">status</span>', $<span class="hljs-attr">post-</span>&gt;</span>status) == 0 ? 'selected':'' }} &gt;Draft<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mb-5"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"content"</span>&gt;</span>Content<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span>
+                    <span class="hljs-attr">name</span>=<span class="hljs-string">"content"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"content"</span>
+                    <span class="hljs-attr">class</span>=<span class="hljs-string">"
+                        form-control
+                        block
+                        w-full
+                        px-3
+                        py-1.5
+                        text-base
+                        font-normal
+                        text-gray-700
+                        bg-white bg-clip-padding
+                        border border-solid border-gray-300
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                      "</span>
+                    <span class="hljs-attr">cols</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">"10"</span>
+                    <span class="hljs-attr">required</span>&gt;</span>{{ old('content', $post-&gt;content) }}<span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+
+                <span class="hljs-comment">&lt;!-- error message untuk content --&gt;</span>
+                @error('content')
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"invalid-feedback"</span>&gt;</span>
+                    {{ $message }}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                @enderror
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"mt-3"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span>
+                        <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"</span>&gt;</span>
+                    Update
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"{{ route('post.index') }}"</span>
+                   <span class="hljs-attr">class</span>=<span class="hljs-string">"inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out"</span>&gt;</span>back<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.tailwindcss.com/?plugins=forms"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    CKEDITOR.replace(<span class="hljs-string">'content'</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Pada baris kode di atas, <code>$post</code> kita tampilkan di value pada form input masing-masing. Misalnya untuk title, kita tampilkan pada value form input dengan name.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"title"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"{{ old('title', $post-&gt;title) }}"</span>&gt;</span></code></pre>
+<p>Untuk action form, form edit ini mengarah ke route <code>post.update</code> dengan id sebagai parameternya dan route ini mengarah ke method <code>update()</code> pada <code>PostController</code>.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"{{ route('post.update', $post-&gt;id) }}"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"POST"</span>&gt;</span>
+    @csrf
+    @method('PUT')</code></pre>
+<p>Selain itu, karena ini proses untuk update data jadi kita tambahkan blade directive <code>@method('PUT')</code>.</p>
+<p>Selanjutnya kita akan menambahkan kode pada method <code>update()</code> yang akan menangani proses update data. Buka kembali file controller <code>PostController</code>, lalu kita tambahkan baris kode pada method <code>update()</code>.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-comment">// ... baris kode sebelumnya</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span>
+</span>{
+    <span class="hljs-comment">// ... baris kode sebelumnya</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">update</span>(<span class="hljs-params">Request <span class="hljs-variable">$request</span>, Post <span class="hljs-variable">$post</span></span>)  
+    </span>{  
+        <span class="hljs-keyword">$this</span>-&gt;validate(<span class="hljs-variable">$request</span>, [  
+            <span class="hljs-string">'title'</span> =&gt; <span class="hljs-string">'required|string|max:151'</span>,  
+            <span class="hljs-string">'content'</span> =&gt; <span class="hljs-string">'required'</span>,  
+            <span class="hljs-string">'status'</span> =&gt; <span class="hljs-string">'required|integer'</span>  
+        ]);  
+
+        <span class="hljs-variable">$post</span>-&gt;update([  
+            <span class="hljs-string">'title'</span> =&gt; <span class="hljs-variable">$request</span>-&gt;get(<span class="hljs-string">'title'</span>),  
+            <span class="hljs-string">'content'</span> =&gt; <span class="hljs-variable">$request</span>-&gt;get(<span class="hljs-string">'content'</span>),  
+            <span class="hljs-string">'status'</span> =&gt; <span class="hljs-variable">$request</span>-&gt;get(<span class="hljs-string">'status'</span>),  
+            <span class="hljs-string">'slug'</span> =&gt; Str::slug(<span class="hljs-variable">$request</span>-&gt;get(<span class="hljs-string">'title'</span>))  
+        ]);  
+
+        <span class="hljs-keyword">return</span> redirect()-&gt;route(<span class="hljs-string">'post.index'</span>)  
+            -&gt;with(<span class="hljs-string">'success'</span>, <span class="hljs-string">'Post updated successfully.'</span>);  
+    }
+}</code></pre>
+<p>Sama seperti method <code>edit()</code>, method <code>update()</code> juga menggunakan model <code>Post</code> sebagai parameter. Jadi secara otomatis, <code>$post</code> ini merupakan instance dari model <code>Post</code> berdasarkan id pada request URI yang didefinisikan pada action form.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"{{ route('post.update', $post-&gt;id) }}"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"POST"</span>&gt;</span>
+    @csrf
+    @method('PUT')</code></pre>
+<p>Algoritma method <code>update()</code> ini terbagi menjadi tiga bagian, yaitu validasi, proses update data, dan proses redirect ke route <code>post.index</code> atau halaman daftar post.</p>
+<h2 id="step-7">Step 7 - Coding Fitur Hapus Data</h2>
+<p>Fitur terakhir untuk project kita adalah fitur hapus data post. Buka kembali file controller <code>PostController</code>, lalu kita tambahkan method <code>destroy()</code>.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-php hljs"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-comment">// ... baris kode sebelumnya</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostController</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Controller</span>
+</span>{
+
+    <span class="hljs-comment">// ... baris kode sebelumnya</span>
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">destroy</span>(<span class="hljs-params">Post <span class="hljs-variable">$post</span></span>)  
+    </span>{  
+        <span class="hljs-variable">$post</span>-&gt;delete();  
+        <span class="hljs-keyword">return</span> redirect()  
+            -&gt;route(<span class="hljs-string">'post.index'</span>)  
+            -&gt;with(<span class="hljs-string">'success'</span>, <span class="hljs-string">'Post deleted successfully.'</span>);  
+    }
+}</code></pre>
+<p>Ya, sama seperti method <code>edit()</code> dan <code>update()</code>, kita gunakan model <code>Post</code> sebagai parameter untuk method <code>destroy()</code>. Method <code>destroy()</code> ini menangani proses untuk menghapus data berdasarkan id yang terdapat pada request URI yang sebelumnya sudah kita definisikan pada route <code>post.destroy</code> di form delete pada file <code>index.blade.php</code>. </p>
+<p>Teman-teman bisa buka kembali file <code>index.blade.php</code>, lalu temukan baris kode berikut ini.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">onsubmit</span>=<span class="hljs-string">"return confirm('Apakah Anda Yakin ?');"</span>
+      <span class="hljs-attr">action</span>=<span class="hljs-string">"{{ route('post.destroy', $post-&gt;id) }}"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"POST"</span>&gt;</span>
+    @csrf
+    @method('DELETE')</code></pre>
+<p>Pada baris kode di atas, <code>$post-&gt;id</code> pada parameter route akan digunakan sebagai id untuk model instance <code>$post</code> pada method <code>destroy()</code>. Selain route <code>post.destroy</code> yang mengarah ke method <code>destroy()</code>, kita perlu menambahkan blade directive <code>@method('DELETE')</code> sebagai tanda action form ini menggunakan HTTP DELETE method.</p>
+<h2 id="step-8">Step 8 - Run Project</h2>
+<p>Kita sudah selesai coding fitur CRUD untuk project kita, dimulai dari fitur menampilkan data, menambahkan data, memperbaharui data dan menghapus data. Sekarang kita bisa coba run project kita. Buka kembali terminal, lalu run command berikut ini.</p>
+<pre><button class="copy-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></button><code class="language-bash hljs">php artisan serve</code></pre>
+<p>Setelah itu buka url <code>http://127.0.0.1:8000/post</code> di browser. Setelah kita bisa coba tambahkan data, perbaharui data dan hapus data.</p>
+<h2 id="penutup">Penutup</h2>
+<p>Dalam tutorial ini, kita telah mempelajari tentang Laravel 10 dan Tailwindcss untuk membuat aplikasi web dengan fitur CRUD. Setelah mengikuti tutorial ini, kita akan memahami perbedaan antara Laravel 8 dan Laravel 10, khususnya dalam hal fitur dan sintaksis. Kita telah sama-sama belajar cara membuat aplikasi web dari awal hingga akhir, termasuk instalasi, konfigurasi database, dan pembuatan fitur CRUD. Kita juga telah membahas cara menggunakan Tailwindcss untuk merancang tampilan user interface dan meningkatkan kinerja aplikasi web.</p>
+<p>Setelah berhasil membuat aplikasi CRUD menggunakan Laravel 10 dan Tailwind CSS, Kita bisa menyimpulkan sejauh ini tidak ada perbedaan untuk codingan di Laravel 10, kecuali beberapa bagian yang menjadi perbedaan laravel 10 dengan laravel sebelumnya seperti.</p>
+<ol>
+<li>Laravel 10 menggunakan PHP versi 8.1 sebagai syarat minimumnya dan sudah tidak menggunakan php versi 8.0. Bisa kita cek di file <code>composer.json</code> Kedepannya kita bisa lihat penggunaan fitur PHP 8.1 ketika menggunakan laravel 10 ini.</li>
+<li>Terdapat <strong>return type</strong> di setiap method atau function ketika kita generate menggunakan <code>artisan</code> command. Contohnya bisa kita lihat di file controller <code>PostController.php</code>.</li>
+</ol>
+<p>Dari hasi belajar kali ini baru dua fitur laravel 10 yang saya temukan, selain percobaan menggunakan tailwind CSS dan penggunaan route model binding. </p>
+<p>Kembali ke pertanyaan awal, apakah fokus belajar laravel 8 atau mulai mencoba laravel 10? Menurut saya, terlepas dari versi yang kita gunakan, kita lebih baik fokus ke basic dan memahami konsep dari framework laravel. Sehingga ketika ada rilis versi berapa pun, selama kita paham, kita bisa dengan mudah mempelajarinya.</p>
+
+                                <div class="news-tags mt-1">
+                                                                            <a href="https://qadrlabs.com/posts/tags/crud" class="text-muted tag-label">crud</a>
+                                                                            <a href="https://qadrlabs.com/posts/tags/laravel" class="text-muted tag-label">Laravel</a>
+                                    
+
+                                </div>
+                            
+
+
+
+
+                            <div class="share-horizontal">
+                                <p>
+                                    Share </p>
+                                <ul class="shareitnow">
+                                    <li>
+                                        <a target="_blank" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fqadrlabs.com&amp;ref_src=twsrc%5Etfw&amp;text=Memulai%20belajar%20Laravel%2010%20dan%20Tailwind%20css%20untuk%20membangun%20crud%20app%20sederhana&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fqadrlabs.com%2Fpost%2Fmemulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app" rel="noreferrer">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.facebook.com/share.php?u=https%3A%2F%2Fqadrlabs.com%2Fpost%2Fmemulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app" rel="noreferrer">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fqadrlabs.com%2Fpost%2Fmemulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app" rel="noreferrer">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fqadrlabs.com%2Fpost%2Fmemulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app" rel="noreferrer">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body ">
+                            <div class="writer">
+                                <div class="author-info">
+                                    <div class="author-avatar">
+                                        <div class="boxavatars">
+                                            <div class="avatardesigner gradientavatars">
+                                                <div class="paddingphoto"><img src="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/placeholder.svg" data-src="https://avatars.githubusercontent.com/u/13196484?v=4" class="lazyload" alt="Gun Gun Priatna"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="name-and-desc">
+                                        <div class="author-name"><a href="https://qadrlabs.com/author/@gungunpriatna">Gun Gun Priatna</a>
+                                            <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                                                <path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z" fill="#568af5"></path>
+                                            </svg></div>
+                                        <div class="author-desc">Software Engineer, Content Writer and Founder qadrlabs.com</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="card-title">
+                                Related Article
+                            </div>
+
+                            <ul>
+
+                                
+                                                                                                            <li><a href="https://qadrlabs.com/post/panduan-lengkap-laravel-filament-untuk-pemula-studi-kasus-crud-product" class="text-muted">Panduan Lengkap Laravel Filament untuk Pemula: Studi Kasus CRUD Product</a></li>
+                                                                            <li><a href="https://qadrlabs.com/post/generate-model-migration-and-seeder-from-existing-database" class="text-muted">Generate Model, Migration and Seeder from Existing Database</a></li>
+                                                                            <li><a href="https://qadrlabs.com/post/using-spatie-laravel-permission-in-laravel-11-a-step-by-step-tutorial" class="text-muted">Using Spatie Laravel Permission IN LARAVEL 11+:  A Step-by-Step Tutorial</a></li>
+                                                                            <li><a href="https://qadrlabs.com/post/testing-menggunakan-pest" class="text-muted">Testing Menggunakan Pest</a></li>
+                                                                            <li><a href="https://qadrlabs.com/post/mengatasi-n1-query-problem-di-project-laravel" class="text-muted">Mengatasi N+1 Query Problem di Project Laravel</a></li>
+                                                                    
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card-body">
+                            <div class="card-title">
+                                <i class="fa fa-comments o"></i> Komentar
+                            </div>
+                            <hr>
+
+                            <script>
+                                /**
+                                 * Disqus loader which verifies the existence of `#disqus_thread` on
+                                 * the web page and then prepares the disqus embed script to hook in
+                                 * the document
+                                 */
+                                function load_disqus( disqus_shortname ) {
+                                    // Prepare the trigger and target
+                                    var disqus_trigger = jQuery('#disqus_trigger'),
+                                        disqus_target = jQuery('#disqus_thread');
+
+                                    // Load script asynchronously only when the trigger and target exist
+                                    if(disqus_target && disqus_trigger) {
+                                        jQuery.ajaxSetup({ cache:true });
+                                        jQuery.getScript('//' + disqus_shortname + '.disqus.com/embed.js');
+                                        jQuery.ajaxSetup({ cache:false });
+                                        disqus_trigger.remove();
+                                        console.log('Disqus loaded.');
+                                    }
+                                }
+                            </script>
+                            <div id="disqus_thread" class="text-center">
+                            <button id="diqus_loader" onclick="load_disqus(&#39;recodeku&#39;)" class="btn btn-outline-secondary border-0 btn-pill shadow-sm">Post a Comment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- ./col -->
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+
+                    <div class="share d-none d-sm-block sticky-share">
+
+                                                <div class="accordion mb-3" id="daftar-isi">
+                            <div class="accordion-item" style="text-decoration: none;text-align: left !important;font-size: .875rem;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Daftar isi
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#daftar-isi">
+                                    <div class="accordion-body">
+
+                                            <ul>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#persiapan">Persiapan Environment Development</a></li>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#overview">Overview</a></li>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#step-1">Step 1 - Setup Project</a></li>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#step-2">Step 2 - Set Konfigurasi Database</a></li>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#step-3">Step 3 - File Model dan Migration</a></li>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#step-4">Step 4 - Coding Fitur Menampilkan Data</a></li>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#step-5">Step 5 - Coding Fitur Menambahkan Data</a></li>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#step-6">Step 6 - Coding Fitur Memperbaharui Data</a></li>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#step-7">Step 7 - Coding Fitur Hapus Data</a></li>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#step-8">Step 8 - Run Project</a></li>
+<li><a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#penutup">Penutup</a></li>
+</ul>                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+
+
+                </div> <!-- ./col -->
+
+
+            </div>
+        </div>
+    </section>
+
+
+<!-- Back to top -->
+<a href="https://qadrlabs.com/post/memulai-belajar-laravel-10-dan-tailwindcss-untuk-membangun-crud-app#" id="scroll" title="Back to top" style="display: inline;"><span></span></a>
+
+
+<!-- Copyright -->
+<div class="copyright">
+    <div class="py-4 font-weight-light text-muted border-top">
+        <div class="container">
+            <div class="align-items-center text-sm text-gray-500 row">
+                <div class="text-center text-lg-start col-lg-4">
+                    <p class="mb-lg-0">© 2025 <strong>qadrLabs</strong>
+                        . <a target="_blank" class="text-dark text-decoration-none" href="https://pdki-indonesia.dgip.go.id/search?type=copyright&amp;keyword=qadrlabs&amp;page=1">All rights reserved. <strong class="text-foreground">000515268</strong></a></p>
+                </div>
+                <div class="col-lg-8">
+                    <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-lg-end">
+                        <li class="list-inline-item"><a class="text-dark text-decoration-none" href="https://qadrlabs.com/p/about-us">About </a>
+                        </li>
+                        <li class="list-inline-item"><a class="text-dark text-decoration-none" href="https://qadrlabs.com/p/tos">Terms
+                                Of Service </a></li>
+                        <li class="list-inline-item"><a class="text-dark text-decoration-none" href="https://qadrlabs.com/p/privacy-policy">Privacy
+                                Policy </a></li>
+                        <li class="list-inline-item"><a class="text-dark text-decoration-none" href="https://qadrlabs.com/sitemap.xml">Sitemap </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- end of copyright -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title fs-5" id="searchModalLabel">Search</div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form role="search" action="https://qadrlabs.com/posts/search" method="GET" class="card-search card-sm d-flex">
+                    <input class="form-control me-2" type="text" name="q" id="search" placeholder="Mau belajar apa?" aria-label="Search">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+<script src="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/lazysizes.min.js" async=""></script>
+
+<script>
+    var baseUrl = "https://qadrlabs.com"
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#scroll').fadeIn();
+            } else {
+                $('#scroll').fadeOut();
+            }
+
+            if ($(this).scrollTop() > 100) {
+                $('.navbar').addClass('solid shadow');
+            } else {
+                $('.navbar').removeClass('solid shadow');
+            }
+        });
+        $('#scroll').click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 600);
+            return false;
+        });
+    });
+</script>
+
+    <script src="./Memulai belajar Laravel 10 dan Tailwind css untuk membangun crud app sederhana_files/highlight.min.js"></script>
+    <script>
+
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".content img").addClass("shadow-sm mb-5 mt-5");
+
+            const copyButtonLabel = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg>';
+
+            // use a class selector if available
+            let blocks = document.querySelectorAll("pre");
+
+            blocks.forEach((block) => {
+                // only add button if browser supports Clipboard API
+                if (navigator.clipboard) {
+                    let button = document.createElement("button");
+
+                    button.innerHTML = copyButtonLabel;
+                    button.classList.add('copy-btn')
+
+                    block.insertBefore(button, block.querySelector('code'));
+                    // block.appendChild(button);
+
+                    button.addEventListener("click", async () => {
+                        await copyCode(block, button);
+                    });
+                }
+            });
+
+            async function copyCode(block, button) {
+                let code = block.querySelector("code");
+                let text = code.innerText;
+
+                await navigator.clipboard.writeText(text);
+
+                // visual feedback that task is completed
+                button.innerHTML = "Copied";
+
+                setTimeout(() => {
+                    button.innerHTML = copyButtonLabel;
+                }, 700);
+            }
+
+        });
+
+
+
+
+
+    </script>
+
+
+
+</body></html>

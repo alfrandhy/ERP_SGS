@@ -130,7 +130,7 @@
         <div class="mb-5">
             <label for="location">location</label>
             <textarea
-                name="location" id="content"
+                name="location" id="textarea1"
                 class="
                     form-control
                     block
