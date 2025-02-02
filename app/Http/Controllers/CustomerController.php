@@ -144,7 +144,6 @@ class CustomerController extends Controller
         // $customer->update($request->all());
 
         // validasi data
-
     $request->validate([
         'customer' => 'required|max:125|unique',
         'code' => 'required|max:5|unique',
